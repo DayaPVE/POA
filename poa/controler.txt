@@ -1,0 +1,47 @@
+//PROYECTOS ESTRATEGICOS
+    case "guardarproyectosestrategicos":
+        
+        $proyectoest = $_REQUEST['proyectoest'];
+        $descripcionest = $_REQUEST['descripcionest'];
+        $viabilidadest = $_REQUEST['viabilidadest'];
+       
+        try {
+            $poaModel->insertarProyectosest($proyectoest, $descripcionest, $viabilidadest);
+        } catch (Exception $e) {
+            $_SESSION['mensaje'] = $e->getMessage();
+        }
+        $listadoProest = $poaModel->getProyectosests();
+        $_SESSION['listadoProest'] = serialize($listadoProest);
+        header('Location: ../view/proyectosestrategicos.php');
+        break;
+    
+    case "eliminarProyectoest":
+        $idproyectoest = $_REQUEST['idproyectoest'];
+        $poaModel->eliminarProyectosest($idproyectoest);
+        $listadoProest = $poaModel->getProyectosests();
+        $_SESSION['listadoProest'] = serialize($listadoProest);
+        header('Location: ../view/listarproyectosestrategicos.php');
+        break;
+    case "cargarProyectoest":
+        $idproyectoest = $_REQUEST['idproyectoest'];
+        $proyecto = $poaModel->getProyectosest($idproyectoest);
+        $codigo=$proyecto->getIdproyectoest();
+//        echo $codigo;
+        $_SESSION['proyecto'] = serialize($proyecto);
+        header('Location: ../view/actualizarproyectosestrategicos.php');
+        break;
+    case "actualizarProyectoest":
+        $idproyectoest = $_REQUEST['idproyectoest'];
+        $proyectoest = $_REQUEST['proyectoest'];
+        $descripcionest = $_REQUEST['descripcionest'];
+        $viabilidadest = $_REQUEST['viabilidadest'];
+        $poaModel->actualizarProyectosest($idproyectoest, $proyectoest, $descripcionest, $viabilidadest);
+        $listadoProest = $poaModel->getProyectosests();
+        $_SESSION['listadoProest'] = serialize($listadoProest);
+        $proyecto = $poaModel->getProyectosest($idproyectoest);
+        $_SESSION['proyecto'] = $proyecto;
+        header('Location: ../view/proyectosestrategicos.php');
+        break;
+    
+
+    

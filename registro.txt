@@ -1,0 +1,23 @@
+<h:form>
+			<h:panelGrid columns="2">
+				<h:outputText value="cédula" />
+				<p:inputText value="#{controllerRegistro.cedula}"/>
+				
+				<h:outputText value="nombres" />
+				<h:panelGroup>
+				<p:inputText value="#{controllerRegistro.nombres}" required="true"
+					requiredMessage="Debe indicar sus nombres." id="nombres"/>
+				<p:message for="nombres"></p:message>
+				</h:panelGroup>
+				
+				<h:outputText value="apellidos" />
+				<p:inputText value="#{controllerRegistro.apellidos}" required="true"
+					requiredMessage="Debe indicar sus apellidos."/>
+					
+				<h:outputText value="clave" />
+				<p:password value="#{controllerRegistro.clave}"></p:password>
+				
+				<p:commandButton value="Registrar" update="@form" action="pedido"></p:commandButton>
+				<p:messages autoUpdate="true"></p:messages>
+			</h:panelGrid>
+		</h:form>

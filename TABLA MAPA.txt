@@ -1,0 +1,35 @@
+<table class="table table-bordered" width="100%" cellspacing="0">
+                <thead >
+                    <tr align="center">
+                        <th rowspan="2">ACCIONES</th>  
+                        <th colspan=3>RESPONSABILIDAD</th> 
+                        <th colspan="12">CRONOGRÁMA</th> 
+                        <th colspan="3">RECURSOS</th> 
+                        <th colspan="2">FACTORES DE CUMPLIMIENTO</th>                   
+                    </tr>
+                    <tr align="center"> 
+                        <th><font size="1">PRIMARIA</font></th>
+                        <th><font size="1">OTROS</font></th>
+                        <th><font size="1">TIPO ACT.</font></th>
+                        <th><font size="1">ENE</font></th>
+                        <th><font size="1">FEB</font></th>
+                        <th><font size="1">MAR</font></th>
+                        <th><font size="1">ABR</font></th>
+                        <th><font size="1">MAY</font></th>
+                        <th><font size="1">JUN</font></th>
+                        <th><font size="1">JUL</font></th>
+                        <th><font size="1">AGO</font></th>
+                        <th><font size="1">SEP</font></th>
+                        <th><font size="1">OCT</font></th>
+                        <th><font size="1">NOV</font></th>
+                        <th><font size="1">DIC</font></th>
+                        <th><font size="1">HUMANOS</font></th>
+                        <th><font size="1">MATERIALES</font></th>
+                        <th><font size="1">FINANCIEROS</font></th>
+                        <th><font size="1">MEDIO DE VERIFICACIÓN</font></th>  
+                        <th><font size="1">ESCALA CUMPLIMIENTO</font></th>                   
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>

@@ -1,0 +1,7 @@
+select * from finalidadproposito where idambito= 6;
+
+select * from estrategia where idambito=6;
+
+select * from construccionicr where idambito=6;
+
+select * from determinacionmeta where idambito=6;
